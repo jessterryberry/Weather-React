@@ -1,3 +1,9 @@
+# Kudos
+
+This project was created by following the tutorial by [TylerPottsDev](https://www.youtube.com/watch?v=GuA0_Z1llYU) on YouTube and on [GitHub](https://github.com/TylerPottsDev).
+
+Future iterations will be added.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
