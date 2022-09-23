@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 const api = {
-  key: "YOURAPIKEY",
+  key: "494d35163015b63a1eb560266647ea95",
   base: "https://api.openweathermap.org/data/2.5/"
 }
 
@@ -52,10 +52,14 @@ function App() {
             <div className="date">{dateBuilder(new Date())}</div>
           </div>
           <div className="weather-box">
-            <div className="temp">
+            <div className={(typeof weather.main != "undefined") ? ((weather.weather[0].id > 199) && (weather.weather[0].id < 599) ? 'temp rain' : 'temp') : 'temp'}>
             {Math.round(weather.main.temp)}°c
-            </div>
+            </div>            
+            <div><img src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}@4x.png`}></img></div>
             <div className="weather">{weather.weather[0].main}</div>
+            <div className="weather">{weather.weather[0].description}</div>
+
+
           </div>
         </div>
         ) : ('')}
